@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .container {
     max-width: 1170px;
@@ -18,4 +19,29 @@ body {
     margin-left: 20px;
     font-size: 16px;
     color: #9a9a9a;
+}
+.header__phone {
+    font-size: 20px;
+    font-weight: 500;
+}
+.header__phone a {
+    color: #303030;
+    text-decoration: none;
+    position: relative;
+}
+.header__phone a::before {
+    content: "";
+    background-image: url(../img/phone.svg);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -27px;
+    top: -27px;
+}
+.header__phone-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9a9a9a;
+    text-align: right;
+    padding-top: 3px;
 }
