@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+    align-items: center;
+}
+.header__text {
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #9a9a9a;
+}
