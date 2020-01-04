@@ -16,7 +16,7 @@ body {
 }
 .header__text {
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 32px;
     font-size: 16px;
     color: #9a9a9a;
 }
@@ -36,7 +36,7 @@ body {
     height: 15px;
     position: absolute;
     left: -27px;
-    top: -27px;
+    top: 5px;
 }
 .header__phone-text {
     font-size: 12px;
@@ -44,4 +44,110 @@ body {
     color: #9a9a9a;
     text-align: right;
     padding-top: 3px;
+}
+.top {
+    margin-bottom: 75px;
+}
+.top__images {
+    background-image: url(../img/top-back.jpg);
+    min-height: 544px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+.top__wrapper {
+    margin-top: -450px;
+}
+.top__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.top__inner-img {
+    margin-left: 125px;
+}
+.top__inner-form {
+    max-width: 570px;
+    width: 100%;
+}
+.top__inner-suptitle {
+    margin-top: 80px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.7px;
+}
+.top__inner-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.top__inner-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 95px;
+}
+.top-form {
+    background-color: #fff;
+    padding: 20px;
+}
+.top-form form {
+    border: 1px solid #c8dcba;
+    position: relative;
+}
+.top-form__inner {
+    padding: 43px 51px 118px 49px;
+}
+.top-form__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #303030;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+    margin-bottom: 31px;
+    width: 190px;
+}
+.top-form input {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c8dcba;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+.top-form input + input {
+    margin-left: 20px;
+}
+.top-form input::placeholder {
+    letter-spacing: 0.7px;
+    color: #a8c48c;
+}
+.top-form button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 22px 110px 22px 75px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    background-color: #7eb252;
+}
+.top-form button::after {
+    content: "";
+    background-image: url(../img/arrow.png);
+    width: 31px;
+    height: 9px;
+    position: absolute;
+    right: 63px;
+    top: 25px;
 }
