@@ -121,9 +121,10 @@ body {
     font-size: 14px;
     color: #000;
     font-weight: 400;
+    width: 200px;
 }
 .top-form input + input {
-    margin-left: 20px;
+    margin-left: 23px;
 }
 .top-form input::placeholder {
     letter-spacing: 0.7px;
@@ -151,3 +152,29 @@ body {
     right: 63px;
     top: 25px;
 }
+.features__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.features__item {
+    max-width: 201px;
+    width: 100%;
+}
+.item-title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #a4c58c;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #a4c58c;
+    margin-bottom: 28px;
+}
+.item-title span {
+    font-size: 30px;
+}
+.item-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
