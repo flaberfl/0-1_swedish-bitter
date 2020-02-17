@@ -19,6 +19,7 @@ body {
 .container-fluid {
     max-width: 1720px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .header__inner {
     display: flex;
@@ -146,6 +147,9 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.form__btn {
     padding: 22px 110px 22px 75px;
     border: none;
     color: #fff;
@@ -154,8 +158,9 @@ body {
     letter-spacing: 1.8px;
     text-transform: uppercase;
     background-color: #7eb252;
+    position: relative;
 }
-.top-form button::after {
+.form__btn::after {
     content: "";
     background-image: url(../img/arrow.png);
     width: 31px;
@@ -164,6 +169,7 @@ body {
     right: 63px;
     top: 25px;
 }
+
 .features {
     margin-bottom: 233px;
 }
@@ -204,10 +210,6 @@ body {
     font-weight: 400;
     line-height: 24px;
 }
-.list {
-    background-color: #f6f9f3;
-    background-position: 0 -20px;
-}
 .list__title {
     font-size: 40px;
     font-weight: 700;
@@ -229,7 +231,26 @@ body {
 .list__inner {
     display: flex;
     justify-content: space-between;
+    background-color: #f6f9f3;
+    position: relative;
+    padding-bottom: 30px;
 }
+.list__inner::before,
+.list__inner::after {
+    content: "";
+    position: absolute;
+    background-color: #f6f9f3;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.list__inner::before {
+    right: 100%;
+}
+.list__inner::after {
+    left: 100%;
+}
+
 .tabs {
     width: 100%;
     padding-right: 20px;
@@ -374,7 +395,7 @@ body {
     justify-content: flex-end; /* Чтобы расположить кнопку в правой стороне контейнера */
 }
 .list__link a {
-    margin-top: 47px;
+    margin-top: 22px;
     padding: 24px 100px 22px 120px;
     color: #fff;
     font-size: 14px;
@@ -485,7 +506,7 @@ body {
 
 /**************************** History ***********************/
 .history {
-    padding-top: 206px;
+    padding-top: 249px;
 }
 .history__wrapper {
     background-image: url(../img/alonso.jpg);
@@ -499,14 +520,54 @@ body {
     font-weight: 700;
     letter-spacing: 0.2px;
     max-width: 570px;
-    padding: 90px 0 45px;
+    padding: 88px 0 45px;
 }
 .history__text {
     background-color: #f6f9f3;
-    padding: 35px 40px 90px 0;
-    max-width: 700px
+    padding: 35px 40px 47px 0;
+    max-width: 700px;
+    position: relative;
+}
+.history__text::before {
+    content: "";
+    position: absolute;
+    height: 100%; /* Высота как у родителя */
+    width: 100%;
+    right: 100%;
+    top: 0;
+    background-color: #f6f9f3;
 }
 .history__text p {
-    margin: 15px 0;
+    margin: 16px 0;
 }
-
+.history__form {
+    max-width: 400px;
+    margin-left: 200px;
+    padding-left: 30px;
+}
+.history__form-title {
+    margin: 45px 0px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    padding-right: 30px;
+}
+.history__form input {
+    border: none;
+    outline: none;
+    height: 32px;
+    border-bottom: 1px solid #cddcbc;
+    display: block;
+    width: 100%;
+    font-size: 14px;   
+}
+.history__form input::placeholder {
+    color: a8c48c;
+}
+.history__form button {
+    margin-top: 34px;
+    letter-spacing: 1.3px;
+    width: 100%;
+}

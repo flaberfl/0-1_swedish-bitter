@@ -50,7 +50,7 @@
                                     <div class="top-form__title">Узнайте подробнее о бальзаме</div>
                                     <input type="text" placeholder="Имя">
                                     <input type="text" placeholder="Телефон">
-                                    <button type="submit">Узнать</button>
+                                    <button class="form__btn" type="submit">Узнать</button>
                                 </div>
                             </form>
                         </div>
@@ -82,61 +82,63 @@
         </div>
     </section>
     <section class="list">
-        <div class="container">
-            <div class="list__title">Что из этого списка вы находите у себя?</div>
-            <div class="list__inner">
-                <div class="tabs">
-                    <div class="tab active" data-id="1">
-                        <span>01.</span> Сниженный тонус, не хватает энергии
-                    </div>
-                    <div class="tab" data-id="2">
-                        <span>02.</span> Прыщи, бородавки и растяжки
-                    </div>
-                    <div class="tab" data-id="3">
-                        <span>03.</span> Слабая память и концентрация
-                    </div>
-                    <div class="tab" data-id="4">
-                        <span>04.</span> Болеете чаще раза в год?
-                    </div>
-                    <div class="tab" data-id="5">
-                        <span>05.</span> Головные боли
-                    </div>
-                    <div class="tabs__box">
-                        <div class="tab" data-id="6">
-                            <span>06.</span> Синяки, шишки, ожоги, порезы долго не проходят
+        <div class="container-fluid">
+            <div class="container">
+                <div class="list__title">Что из этого списка вы находите у себя?</div>
+                <div class="list__inner">
+                    <div class="tabs">
+                        <div class="tab active" data-id="1">
+                            <span>01.</span> Сниженный тонус, не хватает энергии
                         </div>
-                        <div class="tab" data-id="8">
-                            <span>08.</span> Проблемы с желудком
+                        <div class="tab" data-id="2">
+                            <span>02.</span> Прыщи, бородавки и растяжки
                         </div>
-                        <div class="tab" data-id="7">
-                            <span>07.</span> Плохо засыпаете и часто просыпаетесь
+                        <div class="tab" data-id="3">
+                            <span>03.</span> Слабая память и концентрация
                         </div>
-                        <div class="tab" data-id="9">
-                            <span>09.</span> Стресс
+                        <div class="tab" data-id="4">
+                            <span>04.</span> Болеете чаще раза в год?
+                        </div>
+                        <div class="tab" data-id="5">
+                            <span>05.</span> Головные боли
+                        </div>
+                        <div class="tabs__box">
+                            <div class="tab" data-id="6">
+                                <span>06.</span> Синяки, шишки, ожоги, порезы долго не проходят
+                            </div>
+                            <div class="tab" data-id="8">
+                                <span>08.</span> Проблемы с желудком
+                            </div>
+                            <div class="tab" data-id="7">
+                                <span>07.</span> Плохо засыпаете и часто просыпаетесь
+                            </div>
+                            <div class="tab" data-id="9">
+                                <span>09.</span> Стресс
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tab-item item-1 active-tab" id="1">01</div>
+                        <div class="tab-item item-2" id="2">02</div>
+                        <div class="tab-item item-3" id="3">03</div>
+                        <div class="tab-item item-4" id="4">04</div>
+                        <div class="tab-item item-5" id="5">05</div>
+                        <div class="tab-item item-6" id="6">06</div>
+                        <div class="tab-item item-7" id="7">07</div>
+                        <div class="tab-item item-8" id="8">08</div>
+                        <div class="tab-item item-9" id="9">09</div>
+                        <div class="tabs__content-reviews tabs__reviews">
+                            <div class="tabs__reviews-inner">
+                                <div class="tabs__reviews-text">Более 2 000 покупателей доказали эффективность «Шведской
+                                    горечи» в каждом из этих случаев</div>
+                                <a href="#" class="tabs__reviews-link">Читать отзывы</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tabs__content">
-                    <div class="tab-item item-1 active-tab" id="1">01</div>
-                    <div class="tab-item item-2" id="2">02</div>
-                    <div class="tab-item item-3" id="3">03</div>
-                    <div class="tab-item item-4" id="4">04</div>
-                    <div class="tab-item item-5" id="5">05</div>
-                    <div class="tab-item item-6" id="6">06</div>
-                    <div class="tab-item item-7" id="7">07</div>
-                    <div class="tab-item item-8" id="8">08</div>
-                    <div class="tab-item item-9" id="9">09</div>
-                    <div class="tabs__content-reviews tabs__reviews">
-                        <div class="tabs__reviews-inner">
-                            <div class="tabs__reviews-text">Более 2 000 покупателей доказали эффективность «Шведской
-                                горечи» в каждом из этих случаев</div>
-                            <a href="#" class="tabs__reviews-link">Читать отзывы</a>
-                        </div>
-                    </div>
+                <div class="list__link">
+                    <a href="#">Избавиться от проблем</a>
                 </div>
-            </div>
-            <div class="list__link">
-                <a href="#">Избавиться от проблем</a>
             </div>
         </div>
     </section>
@@ -189,10 +191,11 @@
                             помогает людям по всему миру.</p>
                     </div>
                     <div class="history__form">
-                        <div class="history__form-title">Оставьте свою почту и получайте рецепты молодости и здоровья каждую неделю</div>
+                        <div class="history__form-title">Оставьте свою почту и получайте рецепты молодости и здоровья
+                            каждую неделю</div>
                         <form>
                             <input type="text" placeholder="E-mail" required>
-                            <button type="submit">Оставить почту</button>
+                            <button class="form__btn" type="submit">Оставить почту</button>
                         </form>
                     </div>
                 </div>
