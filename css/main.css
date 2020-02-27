@@ -505,6 +505,7 @@ body {
 }
 
 /**************************** History ***********************/
+
 .history {
     padding-top: 249px;
 }
@@ -570,4 +571,28 @@ body {
     margin-top: 34px;
     letter-spacing: 1.3px;
     width: 100%;
+}
+.quote {
+    padding-top: 200px;
+}
+.quote__inner {
+    max-width: 770px;
+    padding: 53px 0;
+    border-top: 1px solid #a4c58c;
+    border-bottom: 1px solid #a4c58c;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.author {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 32px;
+}
+.author span {
+    font-size: 16px;
+    color: #9a9a9a;
 }
