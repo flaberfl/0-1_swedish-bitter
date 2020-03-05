@@ -616,6 +616,8 @@ body {
     min-height: 312px;
     border: 1px solid #e4eddc;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .item__number {
     position: absolute;
@@ -627,3 +629,4 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.item__content
