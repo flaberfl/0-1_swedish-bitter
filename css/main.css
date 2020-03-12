@@ -483,7 +483,8 @@ body {
     border: 1px solid #c5dab5;
     padding: 34px 60px 31px 39px;
 }
-.popularity__box-link {
+.popularity__box-link,
+.reviews__link-popup {
     padding: 23px 89px 23px 41px;
     color: #fff;
     font-size: 14px;
@@ -492,10 +493,10 @@ body {
     text-transform: uppercase;
     background-color: #7eb252;
     text-decoration: none;
-    /* min-width: 500px; */
     position: absolute;
 }
-.popularity__box-link::after {
+.popularity__box-link::after,
+.reviews__link-popup::after {
     content: "";
     background-image: url(../img/arrow.png);
     width: 31px;
@@ -819,7 +820,6 @@ body {
 /*******        REVIEWS      *************/
 .reviews {
     padding-top: 59px;
-    padding-bottom: 150px;
 }
 .reviews__title {
     margin-bottom: 40px;
@@ -832,22 +832,136 @@ body {
     color: #c3c3c3;
     text-transform: uppercase;
     display: inline-block;
-    padding-left: 66px;
-    padding-right: 40px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 40px 25px 70px;
     cursor: pointer;
+    position: relative;
+}
+.reviews__tab.active:first-child::before {  /** Добавляется псевдо-элемент, когда класс Active **/
+    content: "";
+    background-color: #f6f9f3;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    top: 0;
+    position: absolute;
+}
+.reviews__tab.active:last-child::after {
+    content: "";
+    background-color: #f6f9f3;
+    width: 168%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    position: absolute;
 }
 .reviews__tab.active {
     background-color: #f6f9f3;
     color: #7eb152;
 }
-.reviews__tab + .reviews__tab {
-    padding-left: 65px;
+.reviews__content {
+    background-color: #f6f9f3;
 }
 .reviews__content-item {
     display: none;
 }
+.reviews-textbox {
+    padding-top: 56px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .reviews__content-item:first-child {
     display: block;
+}
+.reviews-text {
+    padding: 19px 0 43px;
+    color: #9a9a9a;
+    line-height: 22px;
+    max-width: 570px;
+    width: 100%;
+    position: relative;
+}
+.reviews-text:nth-child(odd) {        /**  Для нечетных */
+    padding-left: 70px;
+    padding-right: 15px;
+}
+.reviews-text:nth-child(odd)::before {
+    left: 70px;
+}
+.reviews-text:nth-child(even) {
+    padding-right: 51px;
+    padding-left: 41px;
+}
+.reviews-text::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #a4c58c;
+    position: absolute;
+    top: 0;
+    left: 41px;
+}
+.reviews-text span {
+    font-weight: 700;
+    display: block;
+    margin-top: 15px;
+}
+.reviews__link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 200px;
+}
+.reviews__link-popup {
+    padding-left: 24px;
+    padding-right: 73px;
+    position: relative;
+    letter-spacing: 0.7px;
+}
+.reviews__link-popup::after {
+    right: 23px;
+}
+.reviews__link-tab {
+    margin-right: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7eb152;
+    text-decoration: none;
+    border-bottom: 1px solid #7eb152;
+    line-height: 14px;
+}
+
+/**             BUILD                **/
+
+.build__wrapper {
+    background-image: url(../img/build-bg.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-height: 775px;
+    padding-top: 60px;
+    padding-bottom: 51px;
+}
+.build__content {
+    display: flex;
+    justify-content: flex-end;
+}
+.build__inner {
+    padding: 20px;
+    max-width: 685px;
+    background-color: #fff;
+}
+.build__inner-box {
+    padding: 61px 33px 70px 72px;
+    border: 1px solid #c8dcba;
+}
+.build__title {
+    margin-bottom: 44px;
+}
+.build__text p {
+    line-height: 23px;
+    margin: 14px 0;
+}
+.build__link {
 }
