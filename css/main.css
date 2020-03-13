@@ -484,7 +484,8 @@ body {
     padding: 34px 60px 31px 39px;
 }
 .popularity__box-link,
-.reviews__link-popup {
+.reviews__link-popup,
+.build__link {
     padding: 23px 89px 23px 41px;
     color: #fff;
     font-size: 14px;
@@ -496,7 +497,8 @@ body {
     position: absolute;
 }
 .popularity__box-link::after,
-.reviews__link-popup::after {
+.reviews__link-popup::after,
+.build__link::after {
     content: "";
     background-image: url(../img/arrow.png);
     width: 31px;
@@ -953,15 +955,70 @@ body {
     background-color: #fff;
 }
 .build__inner-box {
-    padding: 61px 33px 70px 72px;
+    padding: 61px 33px 92px 72px;
     border: 1px solid #c8dcba;
 }
 .build__title {
-    margin-bottom: 44px;
+    margin-bottom: 50px;
 }
 .build__text p {
-    line-height: 23px;
-    margin: 14px 0;
+    line-height: 22px;
+    margin: 15px 0;
 }
-.build__link {
+.build__text p + p {
+    padding-right: 24px;
+}
+.build__text span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    display: inline-block;
+    margin-top: 18px;
+    margin-bottom: 84px;
+}
+.build__link{
+    letter-spacing: 0.8px;
+    margin-bottom: 70px;
+    padding: 26px 77px 26px 34px;
+    position: relative;
+}
+.build__link::after {
+    right: 28px;
+}
+
+/* ***************        CERTIFICATE          ************* */
+.certificate {
+    padding-top: 286px;
+}
+.certificate .container-fluid {   /* Отменили действие overflow в этом блоке */
+    overflow: visible;
+}
+.certificate__title {
+    margin-bottom: 45px;
+}
+.certificate__wrapper {
+    background-color: #f6f9f3;
+    padding: 30px 0 95px;
+}
+.certificate__inner {
+    display: flex;
+}
+.certificate__content {
+    max-width: 670px;
+    margin-right: 60px; /* Чтобы отодвинуть картинку в сторону */
+    padding-left: 70px;
+}
+.certificate__text {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 35px;
+    padding-right: 85px;
+}
+.certificate__images {
+    position: relative;
+    top: -213px;
 }
