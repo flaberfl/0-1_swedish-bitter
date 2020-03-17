@@ -26,7 +26,8 @@ body {
     font-weight: 700;
     line-height: 50px;
 }
-.header__inner {
+.header__inner,
+.footer__inner {
     display: flex;
     justify-content: space-between;
     height: 105px;
@@ -38,16 +39,19 @@ body {
     font-size: 16px;
     color: #9a9a9a;
 }
-.header__phone {
+.header__phone,
+.footer__phone {
     font-size: 20px;
     font-weight: 500;
 }
-.header__phone a {
+.header__phone a,
+.footer__phone a {
     color: #303030;
     text-decoration: none;
     position: relative;
 }
-.header__phone a::before {
+.header__phone a::before,
+.footer__phone a::before {
     content: "";
     background-image: url(../img/phone.svg);
     width: 15px;
@@ -56,12 +60,18 @@ body {
     left: -27px;
     top: 5px;
 }
-.header__phone-text {
+.header__phone-text,
+.footer__phone-text {
     font-size: 12px;
     font-weight: 400;
     color: #9a9a9a;
     text-align: right;
     padding-top: 3px;
+}
+.footer__link {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #9a9a9a;
 }
 .top {
     margin-bottom: 75px;
@@ -781,13 +791,6 @@ body {
     line-height: 22px;          
     margin-bottom: 15px;           
 }
-/* .composition__link-btn {
-    position: absolute;
-    bottom: 0; /** Прилупащим ссылку к низу */
-    /* right: 0;
-    padding: 23px 89px 23px 41px; */
-    /* line-height: 14px; */
-
 .composition__link button {
     position: absolute;
     right: 0;
@@ -1004,10 +1007,11 @@ body {
 }
 .certificate__inner {
     display: flex;
+    height: 439px;
 }
 .certificate__content {
-    max-width: 670px;
-    margin-right: 60px; /* Чтобы отодвинуть картинку в сторону */
+    max-width: 640px;
+    margin-right: 83px; /* Чтобы отодвинуть картинку в сторону */
     padding-left: 70px;
 }
 .certificate__text {
@@ -1015,10 +1019,41 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.7px;
-    margin-bottom: 35px;
-    padding-right: 85px;
+    margin-bottom: 44px;
+    padding-right: 50px;
 }
-.certificate__images {
+.certificate__images img {
     position: relative;
     top: -213px;
+}
+.certificate__box {
+    padding: 20px;
+    background-color: #fff;
+}
+.certificate__box fieldset {
+    border: 1px solid #c8dcba;
+    padding: 45px 45px 90px 50px;
+    position: relative;
+}
+.certificate__box p {
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.certificate__box legend {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a4c58c;
+    text-transform: uppercase;
+    padding: 0 8px;
+    line-height: 0;
+}  
+.certificate__box .main__btn {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding-left: 62px;
+    padding-right: 96px;
+}
+.certificate__box .main__btn::after {
+    right: 50px;
 }
