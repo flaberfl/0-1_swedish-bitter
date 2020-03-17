@@ -110,6 +110,7 @@ body {
 }
 .top__inner-title {
     font-size: 60px;
+    line-height: 60px;  /*  Чтобы слово перенеслось на след.строку при сжимании     */
     font-weight: 600;
     color: #fff;
     margin-bottom: 57px;
@@ -120,6 +121,9 @@ body {
     color: #fff;
     margin-bottom: 95px;
     max-width: 505px;
+}
+.mobile__link-btn {
+  display: none;
 }
 .top-form {
     background-color: #fff;
