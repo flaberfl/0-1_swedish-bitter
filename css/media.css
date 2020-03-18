@@ -65,19 +65,8 @@
   .top__inner-img img {
     width: 150px;
   }
-}
-@media (max-width: 600px) {
-  .top__inner-img img {
-    width: 85px;
-  }
-  .top__inner-img {
-    order: 1;
-  }
   .mobile__link-btn {
     display: block;
-  }
-  .top-form {
-    display: none;
   }
   .top__inner-text {
     display: none;
@@ -87,6 +76,28 @@
     align-items: center;
     text-align: center;
   }
+}
+@media (max-width: 600px) {
+  .top__inner-img img {
+    width: 85px;
+  }
+  .top__inner-img {
+    order: 1;
+  }
+  /* .mobile__link-btn {
+    display: block;
+  } */
+  .top-form {
+    display: none;
+  }
+  /* .top__inner-text {
+    display: none;
+  } */
+  /* .top__inner-form {
+    position: static;
+    align-items: center;
+    text-align: center;
+  } */
   .top__inner-suptitle,
   .top__inner-title,
   .top__inner-text {

@@ -499,7 +499,8 @@ body {
 }
 .popularity__box-link,
 .reviews__link-popup,
-.build__link {
+.build__link,
+.mobile__link-btn {
     padding: 23px 89px 23px 41px;
     color: #fff;
     font-size: 14px;
