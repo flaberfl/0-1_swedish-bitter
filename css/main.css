@@ -190,7 +190,7 @@ body {
 }
 
 .features {
-    margin-bottom: 233px;
+    margin-bottom: 198px;
 }
 .features__inner {
     display: flex;
@@ -233,6 +233,7 @@ body {
     letter-spacing: 0.2px;
     max-width: 470px;
     margin-bottom: 43px;
+    padding-top: 35px;
 }
 .tabs__content {
     min-width: 500px;
@@ -298,6 +299,7 @@ body {
 .tab span {
     color: #a4c58c;
     margin-right: 20px;
+    font-weight: 700;
 }
 .tab-item {
     display: none;
@@ -358,7 +360,7 @@ body {
 }
 .tabs__box .tab {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0;
     display: flex;
     align-items: center;
