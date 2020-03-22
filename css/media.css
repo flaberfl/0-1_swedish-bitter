@@ -1,15 +1,18 @@
-@media (max-width: 1640px) {
+@media (max-width: 1640px) {     /*  1640  */
   .popularity__right {
     background-color: #fff;
     padding-left: 15px;
     padding-right: 0;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400px) {     /*  1400  */
   .popularity__wrapper {
     background-size: 750px;
   }
 }
+@media (max-width: 1230px) {    /*  1230  */
+
+} 
 @media (max-width: 1120px) {  /*  1120  */
   .features__inner {
     flex-wrap: wrap;
@@ -266,8 +269,6 @@
   .features__item:nth-child(2) {
     margin-bottom: 0;
   }
-  /* .list__inner::after {
-    z-index: -1; */
 }
 @media (max-width: 550px) {   /*  550  */
   .tabs__content {
