@@ -101,7 +101,7 @@ body {
 }
 .top__inner-suptitle {
     margin-top: 73px;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -113,7 +113,7 @@ body {
     line-height: 60px;  /*  Чтобы слово перенеслось на след.строку при сжимании     */
     font-weight: 600;
     color: #fff;
-    margin-bottom: 57px;
+    margin-bottom: 39px;
 }
 .top__inner-text {
     font-size: 18px;
